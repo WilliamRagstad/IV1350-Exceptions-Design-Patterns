@@ -1,0 +1,15 @@
+se.kth.iv1350.pos.util.ItemOutOfStockException: The item with identifier: 456 was out of stock.
+	at se.kth.iv1350.pos.integration.ItemRegistry.getItem(ItemRegistry.java:46)
+	at se.kth.iv1350.pos.controller.Controller.addItem(Controller.java:51)
+	at se.kth.iv1350.pos.view.View.sampleExecution(View.java:64)
+	at se.kth.iv1350.pos.startup.Main.main(Main.java:49)
+se.kth.iv1350.pos.util.NetworkException: SQL Database Failure: Could not connect to the ItemRegistry Database!
+	at se.kth.iv1350.pos.integration.ItemRegistry.getItem(ItemRegistry.java:45)
+	at se.kth.iv1350.pos.controller.Controller.addItem(Controller.java:51)
+	at se.kth.iv1350.pos.view.View.sampleExecution(View.java:64)
+	at se.kth.iv1350.pos.startup.Main.main(Main.java:49)
+se.kth.iv1350.pos.util.InvalidItemIdentifierException: Invalid item identifier: 789
+	at se.kth.iv1350.pos.integration.ItemRegistry.getItem(ItemRegistry.java:47)
+	at se.kth.iv1350.pos.controller.Controller.addItem(Controller.java:51)
+	at se.kth.iv1350.pos.view.View.sampleExecution(View.java:64)
+	at se.kth.iv1350.pos.startup.Main.main(Main.java:49)
