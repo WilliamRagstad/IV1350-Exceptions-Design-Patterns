@@ -11,7 +11,7 @@ import se.kth.iv1350.pos.util.logger.Logger;
  *	this is persistent during the program execution.
  *
  *  This is implementing one of my GoF patterns (Singleton) in the Process Sale program!
- *  ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+ *  Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨Â¨
  *  Combining the strategy pattern into this singleton wrapper produces the lastly needed
  *  GoF pattern, offers flexible logging for the whole system.
  */
@@ -47,7 +47,7 @@ public class LoggingSystem {
 		return backend;
 	}
 	
-	LoggingSystem() {
+	private LoggingSystem() {
 		this.frontend = new ConsoleLogger();
 		
 		try {
